@@ -6,3 +6,6 @@ scrape_configs:
     scrape_interval: 5s
     static_configs:
       - targets: ['localhost']
+  - job_name: 'mira'
+    static_configs:
+      - targets: ['ws.mirashare.app']
